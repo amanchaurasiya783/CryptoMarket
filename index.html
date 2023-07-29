@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CryptoTracker</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+<div class="container">
+    <header>
+        <nav>
+            <div class="logo">CryptoTracker</div>
+            <div class="links">
+                <label class="switch" id="slider">
+                    <input type="checkbox" onclick="toggleView()">
+                    <span class="slider round"></span>
+                </label>
+                <ul class="menu">
+                    <li>Home</li>
+                    <li>Compare</li>
+                    <li>Watchlist</li>
+                </ul>
+                <button class="dashboard" id="dashboard">Dashboard</button>
+            </div>
+        </nav>
+        <div class="view-type">
+            <div class="view-tab active" id="grid">Grid</div>
+            <div class="view-tab" id="list">List</div>
+        </div>
+    </header>
+    <main class="grid-view" id="main">
+        <!-- <div class="card" id="card">
+            <div class="card-inner" id="card-inner">
+                <div class="coin-title">
+                    <div class="coin-image"><img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579" alt="coin-name"></div>
+                    <div class="coin-symbol">
+                        BTC<br>
+                        <span class="coin-name">Bitcoin</span>
+                    </div>
+                </div>
+                <div class="price-change">0.97 %</div>
+                <div class="curr-price">$123234</div>
+                <div class="total-vol">Total Volume : $3484,2534</div>
+                <div class="total-vol">Market Cap : $3484,2534</div>
+            </div>
+        </div> -->
+        <!-- <div class="list-view">
+            <div class="list-inner">
+                <div class="coin-title">
+                    <div class="coin-image"><img src="https://assets.coingecko.com/coins/images/1/large/bitcoin.png?1547033579" alt="coin-name"></div>
+                    <div class="coin-symbol">
+                        BTC<br>
+                        <span class="coin-name">Bitcoin</span>
+                    </div>
+                </div>
+                <div class="price-change">0.97 %</div>
+                <div class="curr-price">$123234</div>
+                <div class="total-vol"><span>Total Volume : </span> $3484,2534</div>
+                <div class="total-vol"><span> Market Cap : </span> $3484,2534</div>
+            </div>
+        </div> -->
+    </main>
+</div>
+<script src="js/script.js"></script>
+</body>
+</html>

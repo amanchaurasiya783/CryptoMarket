@@ -1,0 +1,244 @@
+@import url(variable.css);
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: var(--font-family);
+}
+
+img{
+    width: 100%;
+    height: 100%;
+}
+
+body{
+    background-color: var(--color-black);
+}
+.container{
+    max-width: 1700px;
+    height: 100vh;
+    background-color: var(--color-black);
+    margin: auto;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul{
+    list-style-type: none;
+    display: flex;
+    gap: 20px;
+    color: var(--color-grey132);
+    align-items: center;
+}
+
+
+/* ----------------------- navbar styling -------------------------- */
+
+header{
+    width: 100%;
+}
+
+nav{
+    width: 100%;
+    padding: 20px;
+    align-items: center;
+    display: flex;
+    font-weight: var(--fw-600);
+    justify-content: space-between;
+}
+
+.logo{
+    color: white;
+    font-weight: var(--fw-700);
+    font-size: 1.2rem;
+}
+
+.links{
+    display: flex;
+    gap: 20px;
+}
+
+.dashboard{
+    outline: none;
+    border: none;
+    padding: 8px 25px;
+    background-color: var(--color-blue226);
+    color: var(--color-white);
+    border-radius: 30px;
+    font-weight: var(--fw-500);
+}
+
+/* ----------------------- view button styling -------------------------- */
+
+.view-type{
+    width: 100%;
+    display: flex;
+    justify-content: stretch;
+}
+
+.view-tab{
+    width: 50%;
+    text-align: center;
+    color: var(--color-white);
+    font-weight: var(--fw-600);
+}
+
+.view-tab:hover, .view-tab.active{
+    color: var(--color-blue226);
+    border-bottom: 2px solid var(--color-blue226);
+}
+
+/* ----------------------- main section styling -------------------------- */
+main{
+    margin: 20px 80px;
+}
+
+.grid-view{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 230px);
+    justify-content: center;
+    gap: 20px;
+}
+
+/* ----------------------- view type styling -------------------------- */
+.card{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: var(--color-grey27);
+    border-radius: 10px;
+    width: 230px;
+    height: 230px;
+}
+
+.card-inner{
+    display: flex;
+    flex-direction: column;
+    gap: 13px;
+}
+
+.coin-image{
+    width: 35px;
+    height: 35px;
+}
+
+.coin-symbol{
+    color: var(--color-white);
+    font-weight: var(--fw-600);
+    font-size: 1.1rem;
+    line-height: 20px;
+}
+
+.coin-symbol .coin-name{
+    color: var(--color-grey132);
+    font-size: 0.9rem;
+}
+
+.coin-title{
+    display: flex;
+    gap: 12px;
+}
+
+.price-change{
+    color: var(--color-green195);
+    border: 2px solid var(--color-green195);
+    padding: 5px 20px;
+    border-radius: 25px;
+    font-size: 0.9rem;
+    margin-right: auto;
+}
+
+.curr-price{
+    color: var(--color-green195);
+    font-size: 1rem;
+    font-weight: var(--fw-500);
+}
+
+.total-vol{
+    color: var(--color-grey132);
+    font-size: 0.8rem;
+}
+
+.list-inner{
+    display: grid;
+    padding: 10px;
+    width: 100%;
+    grid-template-columns: repeat(5, 1fr);
+    align-items: center;
+    gap: 13px;
+}
+
+/* remove and remove frid-view class from MAIN SECTION and class card and change card-inner to list-inner */
+/* ------------------------ slider button ----------------------- */
+.switch {
+    position: relative;
+    align-self: center;
+    display: inline-block;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 20px;
+    width: 20px;
+    /* left: 4px; */
+    /* bottom: 4px; */
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked + .slider {
+    background-color: #2196F3;
+}
+
+input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+}
+
+input:checked + .slider:before {
+    -webkit-transform: translateX(20px);
+    -ms-transform: translateX(20px);
+    transform: translateX(20px);
+}
+
+  /* Rounded sliders */
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+
+
+/* ------------------------ responsive ----------------------- */
+@media all and (max-width: 700px){
+    .links{
+        display: none;
+    }
+}
