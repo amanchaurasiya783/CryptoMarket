@@ -171,8 +171,6 @@ main{
     align-items: center;
     gap: 13px;
 }
-
-/* remove and remove frid-view class from MAIN SECTION and class card and change card-inner to list-inner */
 /* ------------------------ slider button ----------------------- */
 .switch {
     position: relative;
@@ -205,8 +203,6 @@ main{
     content: "";
     height: 20px;
     width: 20px;
-    /* left: 4px; */
-    /* bottom: 4px; */
     background-color: white;
     -webkit-transition: .4s;
     transition: .4s;
